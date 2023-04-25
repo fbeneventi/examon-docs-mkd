@@ -12,7 +12,7 @@ If you're an administrator of ExaMon, our admin documentation provides detailed 
 - Configuring alerting and notifications
 - Managing dashboards and reports
 
-[Click here to access the Admin Documentation](admin_docs.md)
+[Click here to access the Admin Documentation](Administrators/Getting_started.md)
 
 ## User Documentation
 
@@ -24,7 +24,7 @@ If you're a user of ExaMon, our user documentation provides detailed information
 - Setting up alerts and notifications
 - Managing your data using dashboards
 
-[Click here to access the User Documentation](user_docs.md)
+[Click here to access the User Documentation](Users/Getting_started.md)
 
 ## API Reference
 
