@@ -15,7 +15,9 @@ nav:
     - Home: "index.md"
     - Intruduction: "Introduction.md"
     - Administrators:
-      - Administrators: Administrators/*.md
+      - Getting started: Administrators/Getting_started.md
+    - Users:
+      - Getting started: Users/Getting_started.md
     - Metric Reference: "Metrics_reference.md"
     - About: "About.md"
 
