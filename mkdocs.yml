@@ -5,7 +5,7 @@ theme:
     - toc.follow
     - search.suggest
 plugins:
-  - search
+  - search:
       lang: en
 markdown_extensions:
   - toc
