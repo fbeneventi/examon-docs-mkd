@@ -5,6 +5,7 @@ theme:
   name: material
   features:
     - toc.follow
+    - search.suggest
 markdown_extensions:
   - toc
   - extra
