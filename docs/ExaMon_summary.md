@@ -55,7 +55,7 @@ The data source or a sensor is effectively defined when it is possible to unique
 
 Currently, to enter data within ExaMon you must connect to the transport layer (MQTT Broker) and send messages in a specific format.
 
-### Transport
+## Transport
 
 This data model fits well with the [MQTT protocol](https://www.google.com/url?q=https://mosquitto.org/man/mqtt-7.html&sa=D&source=editors&ust=1682361844065309&usg=AOvVaw2anzH1JA3T0GiuHX4GGZ_n) of the transport layer.  
 
@@ -63,19 +63,19 @@ Indeed, the tags and metric name define the topic, while the value and timestamp
 
 ![](images/image8.png)
 
-#### MQTT Topic
+### MQTT Topic
 
 The following figure shows in detail the structure of an MQTT topic implementing the ExaMon data model.
 
 ![](images/image6.png)
 
-#### MQTT Payload
+### MQTT Payload
 
 The MQTT payload, in the basic implementation of ExaMon, is a string obtained by concatenating the measured value and the timestamp associated with it.
 
 ![](images/image11.png)
 
-#### Example
+### Example
 
 An example of the MQTT data that are compatible with the ExaMon data model are the following (Obtained from the reference implementation in [pmu_pub](https://www.google.com/url?q=https://github.com/EEESlab/examon/tree/master&sa=D&source=editors&ust=1682361844067080&usg=AOvVaw0EelZLONoGKHveGk3PgZk0)):
 
@@ -86,7 +86,7 @@ An example of the MQTT data that are compatible with the ExaMon data model are t
 | Payload:                                                                                |
 | 10822010350093;1658832078.001                                                           |
 
-### Storage
+## Storage
 
 In the storage layer the ExaMon data model is mapped to the Cassandra table schema. A table in Cassandra is a collection of rows.  Each row is identified by a primary key. KairosDB defines primary keys in Cassandra primarily as a concatenation of the metric_name and tags and are used to index and search data. The values and timestamps on the other hand represent the columns of the row.
 
