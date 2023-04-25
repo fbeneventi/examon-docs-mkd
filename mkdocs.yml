@@ -1,12 +1,15 @@
 site_name: ExaMon
+
 theme:
   name: material
   features:
     - toc.follow
     - search.suggest
+
 plugins:
   - search:
       lang: en
+
 markdown_extensions:
   - toc
   - extra
@@ -15,6 +18,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.tabbed
+
 nav:
     - Home: "index.md"
     - Introduction: "Introduction.md"
