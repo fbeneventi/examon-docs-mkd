@@ -6,7 +6,7 @@ theme:
     - search.suggest
 plugins:
   - search
-    lang: en
+      lang: en
 markdown_extensions:
   - toc
   - extra
