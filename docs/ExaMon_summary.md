@@ -49,14 +49,8 @@ The data model resembles a hierarchical tree. In the Figure are shown the releva
 -   Sensor location: (Mandatory) it is a free hierarchical sequence of key/value couples used to locate the data source. At least one couple should be present.
 -   Plugin name: (Mandatory) it is the name of the data collector agent (plugin) which acquires data from this sensor
 -   Channel type: (Mandatory) specifies the type of channel
-
-&nbsp;
-
--   data: metrics values sent by the plugin
--   cmd: commands sent to the sensor/plugin
-
-&nbsp;
-
+      -   data: metrics values sent by the plugin
+      -   cmd: commands sent to the sensor/plugin
 -   Specific plugin tags: (Optional) additional free key/values couples to add custom plugin attributes that are unique for this data source.
 
 The data source or a sensor is effectively defined when it is possible to uniquely determine a complete path within the tag hierarchical tree, from top to bottom. This means that in ExaMon, a sensor can only have one value for each of its tags.
