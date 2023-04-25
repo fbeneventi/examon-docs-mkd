@@ -2,15 +2,13 @@
 
 ------------------------------------------------------------------------
 
-# Introduction
+# ExaMon Summary
+
+## Introduction
 
 This is a brief description of the ExaMon platform currently installed at Cineca.
 
 ExaMon (Exascale Monitoring) is a data collection and analysis platform oriented to the management of big data. Its main prerogatives are to manage in a simple way heterogeneous data, both in streaming and batch mode, and to allow the access to these data through a common interface. This simplifies the usability of data supporting applications such as real time anomaly detection, predictive maintenance and efficient resource and energy management using techniques in the domain of machine learning and artificial intelligence. Given its scalable and distributed nature, it is readily applicable to HPC systems, especially exascale sized ones, which is also the primary use case it was designed on.
-
-# ExaMon
-
-In this section we will describe the current implementation of Examon, its data model and data access interface.
 
 ## Architecture
 
