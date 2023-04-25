@@ -1,4 +1,6 @@
 site_name: ExaMon
+plugins:
+  - search
 theme:
   name: material
   features:
