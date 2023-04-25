@@ -1,6 +1,8 @@
 site_name: ExaMon
 theme:
   name: material
+  features:
+    - toc.follow
 markdown_extensions:
   - toc
   - extra
