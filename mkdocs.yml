@@ -14,8 +14,6 @@ markdown_extensions:
 nav:
     - Home: "index.md"
     - Intruduction: "Introduction.md"
-    - Administrators: Administrators/
-    - Users: Users/
     - Metric Reference: "Metric_reference.md"
     - About: "About.md"
 
