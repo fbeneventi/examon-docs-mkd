@@ -26,16 +26,9 @@ If you're a user of ExaMon, our user documentation provides detailed information
 
 [Click here to access the User Documentation](Users/Getting_started.md)
 
-## API Reference
+## Community
 
-If you're a developer, you can use ExaMon's API to integrate it with your applications and services. Our API reference provides detailed information on all the endpoints and methods available in ExaMon's API.
+We hope this documentation helps you get the most out of ExaMon. If you have any questions or feedback, please don't hesitate to contact us at:
 
-## Troubleshooting and FAQs
-
-If you run into any issues while using ExaMon, our troubleshooting and FAQs section can help you find solutions quickly. We've compiled a list of common issues and their solutions, as well as answers to frequently asked questions.
-
-## Glossary
-
-ExaMon includes many technical terms and acronyms that might be unfamiliar to users. Our glossary provides definitions for all the key terms and acronyms used in ExaMon's documentation.
-
-We hope this documentation helps you get the most out of ExaMon. If you have any questions or feedback, please don't hesitate to contact us at support@myframework.com.
+- [ExaMon Forum](https://groups.google.com/g/examon)
+- [ExaMon User Support](francesco.beneventi@unibo.it)
