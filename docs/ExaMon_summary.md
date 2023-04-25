@@ -2,31 +2,6 @@
 
 ------------------------------------------------------------------------
 
-ExaMon
-
-Overview of the release installed at Cineca
-
-------------------------------------------------------------------------
-
-Change History
-
-|            |                           |
-|------------|---------------------------|
-| Date       | Change Description        |
-| 13/10/2021 | v0.1 - First version      |
-| 14/10/2021 | v0.2 - Minor improvements |
-| 01/08/2022 | v0.3 - MQTT details       |
-
-------------------------------------------------------------------------
-
-Table of contents
-
-[TOC]
-
-------------------------------------------------------------------------
-
-# 
-
 # Introduction
 
 This is a brief description of the ExaMon platform currently installed at Cineca.
