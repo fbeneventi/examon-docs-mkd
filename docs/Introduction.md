@@ -96,13 +96,13 @@ The data stored by ExaMon can be retrieved by querying the Cassandra and KairosD
 
 To simplify the development of applications that use ExaMon data, a uniform entry point for all data was developed and named Examon-client. This uniform interface provides a simplified and consistent view of the data, hiding the complexities of data management from the application developer.
 
-Examon-client allows developers to access ExaMon's monitoring and analytics data using a common set of queries and provides a simpler and more intuitive way to interact with the data. In the following section, we will describe the features and capabilities of Examon-client in more detail.
+Examon-client allows users to access ExaMon's monitoring and analytics data using a common set of queries and provides a simpler and more intuitive way to interact with the data. In the following section, we will describe the features and capabilities of Examon-client in more detail.
 
 ### Examon-client
 
 Examon-client is a python package that provides a uniform interface for accessing and analyzing data stored in the ExaMon database. This client enables querying of metrics from the database through a pluggable interface. In the current implementation, the client uses the KairosDB REST API to retrieve data.
 
-Examon-client provides a SQL-like query language for ease of use, allowing developers to retrieve data in a simple and intuitive way. The client is designed to work seamlessly with ExaMon's storage architecture, which is based on Cassandra and KairosDB.
+Examon-client provides a SQL-like query language for ease of use, allowing users to retrieve data in a simple and intuitive way. The client is designed to work seamlessly with ExaMon's storage architecture, which is based on Cassandra and KairosDB.
 
 With Examon-client, ExaMon data can be accessed locally using the Pandas interface or in a distributed fashion using Apache Spark or Dask. This makes it possible to handle heavy workloads efficiently and effectively.
 
@@ -124,7 +124,7 @@ The data returned by the query is a dataframe.
 
 ## Data Visualization
 
-In addition to querying data through Examon-client, developers can also access ExaMon data through the integrated visualization tool, Grafana. Grafana is a high-level component that provides live visualization of different data sources, including information about completed jobs, system service statuses, and hardware sensors' measurements.
+In addition to querying data through Examon-client, users can also access ExaMon data through the integrated visualization tool, Grafana. Grafana is a high-level component that provides live visualization of different data sources, including information about completed jobs, system service statuses, and hardware sensors' measurements.
 
 A wide range of views and pre-built dashboards can be accessed using the dedicated Grafana server. For example, by selecting specific nodes and a time interval (such as the last 5 minutes), users can visualize different metrics as time-series and/or aggregated values (average, max/min, variance, etc.).
 
