@@ -2,7 +2,7 @@ site_name: ExaMon
 
 theme:
   name: material
-  #custom_dir: overrides
+  custom_dir: overrides
   features:
     - toc.follow
     - search.suggest
@@ -21,7 +21,7 @@ markdown_extensions:
   - pymdownx.tabbed
 
 nav:
-    - Home: "index_intro.md"
+    - Home: "index.md"
     - Introduction: "Introduction.md"
     - Administrators:
       - Getting started: Administrators/Getting_started.md
