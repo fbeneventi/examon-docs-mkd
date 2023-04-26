@@ -5,6 +5,139 @@
   {% block tabs %}{% endblock %}
    
   {% block content %}
+<style>
+/* Global styles */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+a {
+    color: #007bff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 0.25rem;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn:hover, .btn:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Features section styles */
+.features {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature__icon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.feature__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6c757d;
+}
+
+/* CTA section styles */
+.cta {
+    padding: 4rem 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cta__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer styles */
+.footer {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+</style>
 </section>
     <header class="hero">
         <div class="hero__overlay"></div>
