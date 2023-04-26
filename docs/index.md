@@ -1,5 +1,1 @@
----
-title: Title
-template: home.html
----
-Welcome to ExaMon Documentation
+# Welcome to ExaMon Documentation
