@@ -21,6 +21,7 @@ markdown_extensions:
   - pymdownx.tabbed
 
 nav:
+    - Home: "index_intro.md"
     - Introduction: "Introduction.md"
     - Administrators:
       - Getting started: Administrators/Getting_started.md
