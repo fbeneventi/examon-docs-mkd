@@ -2,7 +2,7 @@ site_name: ExaMon
 
 theme:
   name: material
-  custom_dir: docs/material/overrides
+  custom_dir: overrides
   features:
     - toc.follow
     - search.suggest
