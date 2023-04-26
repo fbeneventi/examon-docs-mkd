@@ -1,4 +1,5 @@
 site_name: ExaMon
+site_description: Gain deeper insights into your data with advanced monitoring, analytics and visualization tools.
 
 theme:
   name: material
