@@ -7,6 +7,7 @@ theme:
   features:
     - toc.follow
     - search.suggest
+  logo: assets/images/favicon.png
   plugins:
     - search:
         lang: en
