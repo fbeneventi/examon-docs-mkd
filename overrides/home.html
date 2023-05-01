@@ -428,7 +428,17 @@
     </div>
 
 
-    <footer>
+
+
+
+  {% endblock %}
+  
+  <!-- Content -->
+  {% block content %}{% endblock %}
+  
+  <!-- Application footer -->
+  {% block footer %}
+     <footer>
       <div class="footer-content">
         <div class="logo-section">
           <img src="project-logo-1.png" alt="Project Logo 1">
@@ -450,14 +460,4 @@
         </div>
       </div>
     </footer>
-
-
-  {% endblock %}
-  
-  <!-- Content -->
-  {% block content %}{% endblock %}
-  
-  <!-- Application footer -->
-  {% block footer %}
-  {{ super() }}
   {% endblock %}
