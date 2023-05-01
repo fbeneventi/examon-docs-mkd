@@ -278,6 +278,66 @@
 
 
 
+    /* footer  */
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo-section img {
+      max-height: 50px;
+      margin-right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #0088cc;
+    }
+
+    .social-media {
+      display: flex;
+    }
+
+    .social-icon {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .social-icon:hover {
+      color: #0088cc;
+    }
+
+
+
     </style>
   
     <!-- Hero for landing page -->
@@ -309,7 +369,7 @@
             </a>
             <a
               href="https://github.com/EEESlab/examon"
-              title="Github repository"
+              title="GitHub repository"
               class="md-button"
             >
               Go to GitHub
@@ -367,6 +427,29 @@
         </div>
     </div>
 
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo-section">
+          <img src="project-logo-1.png" alt="Project Logo 1">
+          <img src="project-logo-2.png" alt="Project Logo 2">
+          <img src="project-logo-3.png" alt="Project Logo 3">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Credits</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-media">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
 
 
   {% endblock %}
