@@ -291,7 +291,7 @@
       justify-content: space-between;
       align-items: center;
       max-width: 1200px;
-      margin: 0 0;
+      margin: 0 auto;
     }
 
     .logo-section img {
@@ -458,4 +458,6 @@
   {% block content %}{% endblock %}
   
   <!-- Application footer -->
-  {% block footer %}{% endblock %}
+  {% block footer %}
+  {{ super() }}
+  {% endblock %}
