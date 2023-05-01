@@ -196,36 +196,47 @@
 
 
     /* custom styles  */
-      section {
-        margin: 50px 0;
-        padding: 0 20px;
-      }
+    .feature-item h2 svg {
+        height: 30px;
+        float: left;
+        margin-right: 10px;
+        transform: translateY(10%);
+    }
 
-      h2 {
-        font-size: 3rem;
-        margin-bottom: 50px;
-        text-align: center;
-      }
+    .top-hr {
+        margin-top: 42px;
+    }
 
-      .card {
-        background-color: #fff;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-        margin-bottom: 20px;
-        padding: 20px;
-      }
+    .feature-item {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 0 15px;
+        word-break: break-word
+    }
 
-      .card img {
-        max-width: 100%;
-      }
+    .feature-item h2 {
+        color: #333;
+        font-weight: 300;
+        font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: inherit;
+    }
 
-      .card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-      }
-
-      .card p {
-        font-size: 1.2rem;
-      }
+    .feature-item p {
+        font-size: 16px;
+        line-height: 1.8em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: #111;
+        margin: 0 0 10px;
+        display: block;
+    }
 
 
 
@@ -273,17 +284,17 @@
 
     <section class="benefits">
       <h2>Benefits</h2>
-      <div class="card">
+      <div class="feature-item">
         <img src="benefit-1.png" alt="Benefit 1">
         <h3>Benefit 1</h3>
         <p>Description of benefit 1</p>
       </div>
-      <div class="card">
+      <div class="feature-item">
         <img src="benefit-2.png" alt="Benefit 2">
         <h3>Benefit 2</h3>
         <p>Description of benefit 2</p>
       </div>
-      <div class="card">
+      <div class="feature-item">
         <img src="benefit-3.png" alt="Benefit 3">
         <h3>Benefit 3</h3>
         <p>Description of benefit 3</p>
@@ -292,15 +303,15 @@
     
     <section class="companies">
       <h2>Companies That Use Our Tool</h2>
-      <div class="card">
+      <div class="feature-item">
         <img src="company-1.png" alt="Company 1">
         <h3>Company 1</h3>
       </div>
-      <div class="card">
+      <div class="feature-item">
         <img src="company-2.png" alt="Company 2">
         <h3>Company 2</h3>
       </div>
-      <div class="card">
+      <div class="feature-item">
         <img src="company-3.png" alt="Company 3">
         <h3>Company 3</h3>
       </div>
@@ -308,15 +319,15 @@
     
     <section class="sponsors">
       <h2>Sponsors</h2>
-      <div class="card">
+      <div class="feature-item">
         <img src="sponsor-1.png" alt="Sponsor 1">
         <h3>Sponsor 1</h3>
       </div>
-      <div class="card">
+      <div class="feature-item">
         <img src="sponsor-2.png" alt="Sponsor 2">
         <h3>Sponsor 2</h3>
       </div>
-      <div class="card">
+      <div class="feature-item">
         <img src="sponsor-3.png" alt="Sponsor 3">
         <h3>Sponsor 3</h3>
       </div>
@@ -324,17 +335,17 @@
     
     <section class="eu-projects">
       <h2>EU Projects</h2>
-      <div class="card">
+      <div class="feature-item">
         <img src="project-1.png" alt="EU Project 1">
         <h3>EU Project 1</h3>
         <p>Description of EU Project 1</p>
       </div>
-      <div class="card">
+      <div class="feature-item">
           <img src="project-2.png" alt="EU Project 2">
           <h3>EU Project 2</h3>
           <p>Description of EU Project 2</p>
         </div>
-        <div class="card">
+        <div class="feature-item">
           <img src="project-3.png" alt="EU Project 3">
           <h3>EU Project 3</h3>
           <p>Description of EU Project 3</p>
