@@ -1,7 +1,9 @@
 # Examon
 
 ![](images/image1.png)
-
+<figure markdown>
+  ![](images/image1.png){ width="300" }
+</figure>
 ------------------------------------------------------------------------
 
 ## Introduction
