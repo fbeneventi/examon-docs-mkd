@@ -9,12 +9,18 @@ theme:
   features:
     - toc.follow
     - search.suggest
+    - search.highlight
+    - search.share
   logo: assets/images/favicon.png
   plugins:
     - search:
         lang: en
         prebuild_index: true
-    - blog
+
+plugins:
+  - blog
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
 markdown_extensions:
   - toc
