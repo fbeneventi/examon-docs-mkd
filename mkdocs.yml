@@ -14,6 +14,7 @@ theme:
     - search:
         lang: en
         prebuild_index: true
+    - blog
 
 markdown_extensions:
   - toc
@@ -34,5 +35,7 @@ nav:
       - Getting started: Users/Getting_started.md
     - Metrics Reference: "Metrics_reference.md"
     - About: "About.md"
+    - Blog:
+      - blog/index.md
 
 
