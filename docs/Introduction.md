@@ -1,3 +1,7 @@
+!!! warning
+
+    This is an only an early preview and the text may be obsolete.
+
 # ExaMon
 
 <figure markdown>
@@ -22,7 +26,7 @@ The collector layer comprises low-level components responsible for reading data 
 
 ###  Communication layer
 
-The ExaMon framework utilizes the MQTT protocol, which implements the "publish-subscribe" messaging pattern and requires three agents to function: the publisher, subscriber, and broker. The publisher sends data on a specific topic, while the subscriber subscribes to the appropriate topic to receive the required data. The broker has the responsibility of receiving data from publishers, making topics available to subscribers, and delivering data to subscribers. In the MQTT communication mechanism, when a publisher sends data with a specific topic as a protocol parameter, the topic is created and made available at the broker. Any subscriber to that topic will receive the associated data as soon as it becomes available to the broker. In this context, collector agents act as publishers by sending data to the broker.
+The ExaMon framework utilizes the MQTT protocol, which implements the "publish-subscribe" messaging pattern and requires three agents to function: the publisher, subscriber, and broker. The publisher sends data on a specific topic, while the subscriber subscribes to the appropriate topic to receive the required data. The broker has the responsibility of receiving data from publishers, making topics available to subscribers, and delivering data to subscribers. In the MQTT communication mechanism, when a publisher sends data with a specific topic as a protocol parameter, the topic is created and made available to the broker. Any subscriber to that topic will receive the associated data as soon as it becomes available to the broker. In this context, collector agents act as publishers by sending data to the broker.
 
 ### Storage layer
 
@@ -42,8 +46,8 @@ In ExaMon, the tags are used to define extra information about the sensor and so
 
 The data model resembles a hierarchical tree. In the Figure are shown the relevant sections.
 
--   Sensor location: (Mandatory) it is a free hierarchical sequence of key/value couples used to locate the data source. At least one couple should be present.
--   Plugin name: (Mandatory) it is the name of the data collector agent (plugin) which acquires data from this sensor
+-   Sensor location: (Mandatory) It is a free hierarchical sequence of key/value couples used to locate the data source. At least one couple should be present.
+-   Plugin name: (Mandatory) It is the name of the data collector agent (plugin) which acquires data from this sensor
 -   Channel type: (Mandatory) specifies the type of channel
       -   data: metrics values sent by the plugin
       -   cmd: commands sent to the sensor/plugin
@@ -77,7 +81,7 @@ The MQTT payload, in the basic implementation of ExaMon, is a string obtained by
 
 ### Example
 
-An example of the MQTT data that are compatible with the ExaMon data model are the following (Obtained from the reference implementation in [pmu_pub](https://www.google.com/url?q=https://github.com/EEESlab/examon/tree/master&sa=D&source=editors&ust=1682361844067080&usg=AOvVaw0EelZLONoGKHveGk3PgZk0)):
+An example of the MQTT data that are compatible with the ExaMon data model is the following (Obtained from the reference implementation in [pmu_pub](https://www.google.com/url?q=https://github.com/EEESlab/examon/tree/master&sa=D&source=editors&ust=1682361844067080&usg=AOvVaw0EelZLONoGKHveGk3PgZk0)):
 
 |                                                                                         |
 |-----------------------------------------------------------------------------------------|
@@ -88,7 +92,7 @@ An example of the MQTT data that are compatible with the ExaMon data model are t
 
 ## Storage
 
-In the storage layer of ExaMon, the Cassandra table schema maps the data model. Cassandra tables are collections of rows, where each row has a primary key. KairosDB is used by ExaMon to define the primary keys in Cassandra and enable efficient indexing and searching of data. The primary keys are a concatenation of the metric name and tags, and they are used for efficient data indexing and searching. The values and timestamps represent the columns of the row.
+In the storage layer of ExaMon, the Cassandra table schema maps the data model. Cassandra tables are collections of rows, where each row has a primary key. KairosDB is used by ExaMon to define the primary keys in Cassandra and enable efficient indexing and searching of data. The primary keys are a concatenation of the metric name and tags, and they are used for data indexing and searching. The values and timestamps represent the columns of the row.
 
 ![](images/image7.png)
 
@@ -102,9 +106,9 @@ Examon-client allows users to access monitoring and analytics data from ExaMon u
 
 ### Examon-client
 
-Examon-client is a python package that provides a uniform interface for accessing and analyzing data stored in the ExaMon database. This client enables querying of metrics from the database through a pluggable interface. In the current implementation, the client uses the KairosDB REST API to retrieve data.
+Examon-client is a Python package that provides a uniform interface for accessing and analyzing data stored in the ExaMon database. This client enables querying of metrics from the database through a pluggable interface. In the current implementation, the client uses the KairosDB REST API to retrieve data.
 
-Examon-client provides a SQL-like query language for ease of use, allowing users to retrieve data in a simple and intuitive way. The client is designed to work seamlessly with ExaMon's storage architecture, which is based on Cassandra and KairosDB.
+Examon-client provides a SQL-like query language for ease of use, allowing users to retrieve data simply and intuitively. The client is designed to work seamlessly with ExaMon's storage architecture, currently based on Cassandra and KairosDB.
 
 With Examon-client, ExaMon data can be accessed locally using the Pandas interface or in a distributed fashion using Apache Spark or Dask. This makes it possible to handle heavy workloads efficiently and effectively.
 
@@ -128,7 +132,7 @@ The data returned by the query is a dataframe.
 
 In addition to querying data through Examon-client, users can also access ExaMon data through the integrated visualization tool, Grafana. Grafana is a high-level component that provides live visualization of different data sources, including information about completed jobs, system service statuses, and hardware sensors' measurements.
 
-A wide range of views and pre-built dashboards can be accessed using the dedicated Grafana server. For example, by selecting specific nodes and a time interval (such as the last 5 minutes), users can visualize different metrics as time-series and/or aggregated values (average, max/min, variance, etc.).
+A wide range of views and pre-built dashboards can be accessed using the dedicated Grafana server. For example, by selecting specific nodes and a time interval (such as the last 5 minutes), users can visualize different metrics as time series and/or aggregated values (average, max/min, variance, etc.).
 
 ![](images/image5.png)
 
