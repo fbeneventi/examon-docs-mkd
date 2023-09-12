@@ -170,7 +170,7 @@
           }
 
           .feature-item:hover {
-              background-color: #526cfe47;
+              /* background-color: #526cfe47; */
               border-radius: 3px;
           }
 
@@ -276,6 +276,27 @@
         display: block;
     }
 
+    .feature-item .md-button{
+          margin-top:.5rem;
+          margin-right:.5rem;
+          color:var(--md-primary-fg-color);
+          margin: 0 auto; 
+          text-align: center; 
+          font-size: 24px; 
+          padding: 10px 32px;
+          border: 0.1rem solid;
+          border-radius: 0.1rem
+      }
+    .feature-item .md-button:hover,.feature-item .md-button:focus{
+          color:var(--md-default-bg-color);
+          background-color:var(--md-accent-fg-color);
+          border-color:var(--md-accent-fg-color)
+      }
+    .feature-item .md-button--primary{
+          color:#894da8;
+          background-color:var(--md-primary-bg-color);
+          border-color:var(--md-primary-fg-color)
+      }
 
 
     /* footer  */
@@ -312,7 +333,7 @@
     nav a {
       color: var(--md-footer-fg-color--lighter);
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 0.8rem;
       transition: all 0.3s ease-in-out;
     }
 
@@ -454,6 +475,26 @@
         </div>
     </div>
 
+
+    
+    <div class="top-hr">
+      <div class="feature-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <a
+          href="{{ page.next_page.url | url }}"
+          title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary"
+        >
+        Quick start
+      </a>
+      </div>
+    </div>
+    
+
+    <div class="top-hr">
+      <div class="hr">
+        </div>
+    </div>
+
     <div class="top-hr">
       <div class="feature-item">
         <h2> </h2>
@@ -515,9 +556,9 @@
       <div class="footer-content">
         <div class="logo-section">
           <img src="https://github.com/fbeneventi/panels/raw/main/logo4_trasp.png" alt="ExaMon">
-          <div class="md-copyright__highlight">
+<!--           <div class="md-copyright__highlight">
             Copyright &copy; 2023 Francesco Beneventi
-          </div>
+          </div> -->
         </div>
         <nav>
           <ul>
