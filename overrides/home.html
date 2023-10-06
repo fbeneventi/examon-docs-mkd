@@ -327,6 +327,15 @@
         .second-row .feature-item:nth-child(2) {
           order: 1; /* Change order for the second .feature-item in the second-row */
         }
+
+        /* Disable Menu drawer: broken in hompage */
+        .md-header__button:not([hidden]) {
+          display: none;
+        }
+
+        .md-sidebar {
+          display: none;
+        }
       }
 
 
@@ -387,7 +396,6 @@
     .social-icon:hover {
       color: #0088cc;
     }
-
 
 
     </style>
