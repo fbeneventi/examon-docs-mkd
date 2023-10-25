@@ -1,6 +1,6 @@
 # Welcome to the ExaMon Documentation
 
-ExaMon is a powerful monitoring and analytics framework that helps you collect and analyze data from a variety of sources. With ExaMon, you can gain insights into your applications, infrastructure, and user behavior to improve performance, troubleshoot issues, and optimize your operations.
+ExaMon is a powerful monitoring and analytics framework that helps you collect and analyze data from a variety of sources. It employs data engeenering best practices and the latest open-source tools to deliver a fully featured data analysis environment. The following documentation provides instructions for installing framework components and accessing and analyzing data.
 
 ## Admin Documentation
 
