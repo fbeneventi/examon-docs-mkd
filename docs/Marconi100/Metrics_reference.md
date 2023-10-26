@@ -1,4 +1,23 @@
-# Metrics 
+# Marconi 100 - CINECA
+
+
+<figure markdown>
+  ![](../images/Marconi100.jpg){ width="300" }
+</figure>
+
+
+- Model: IBM Power AC922 (Whiterspoon)
+- Racks: 55 total (49 compute)
+- Nodes: 980
+- Processors: 2x16 cores IBM POWER9 AC922 at 2.6(3.1) GHz
+- Accelerators: 4 x NVIDIA Volta V100 GPUs/node, Nvlink 2.0, 16GB
+- Cores: 32 cores/node, Hyperthreading x4
+- RAM: 256 GB/node (242 usable)
+- Peak Performance: about 32 Pflop/s, 32 TFlops per node
+- Internal Network: Mellanox IB EDR DragonFly++ 100Gb/s
+- Disk Space: 8PB raw GPFS storage
+
+## Metrics 
 
 This Section is a brief description of some of the metrics collected by ExaMon from the Marconi100 cluster. It is intended only as an example and is therefore not exhaustive. The Marconi, Galileo and Galileo 100 clusters have similar metrics.
 

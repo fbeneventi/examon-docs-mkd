@@ -49,7 +49,9 @@ nav:
       - Getting started: Administrators/Getting_started.md
     - Users:
       - Getting started: Users/Getting_started.md
-    - Metrics Reference: "Metrics_reference.md"
+    - Clusters:
+      - Marconi 100: "Marconi100/Metrics_reference.md"
+      - MonteCimone: "MonteCimone/MonteCimone.md"
     - About: "About.md"
     - Credits: "credits.md"
     - Contact Us: "contactus.md"
