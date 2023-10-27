@@ -1,3 +1,3 @@
 # Getting Started
 
-[TBD]
+- [Introductory notebook](Demo_ExamonQL.ipynb)
