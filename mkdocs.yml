@@ -23,6 +23,8 @@ plugins:
   - blog
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - mkdocs-jupyter:
+      include_source: True
 
 extra_css:
   - stylesheets/extra.css
@@ -51,7 +53,10 @@ nav:
       - Getting started: Users/Getting_started.md
     - Clusters:
       - Marconi 100: "Marconi100/Metrics_reference.md"
-      - MonteCimone: "MonteCimone/MonteCimone.md"
+      - MonteCimone:
+        - Introduction: "MonteCimone/MonteCimone.md"
+        - Notebooks:
+          - Getting started: "MonteCimone/Examon_Monte_Cimone.ipynb" 
     - About: "About.md"
     - Credits: "credits.md"
     - Contact Us: "contactus.md"
