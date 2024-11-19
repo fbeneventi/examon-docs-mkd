@@ -46,8 +46,8 @@ markdown_extensions:
 
 nav:
     - Home: "index.md"
-    - Getting started: "getting_started.md"
     - Introduction: "Introduction.md"
+    - Getting started: "getting_started.md"
     - Administrators:
       - Getting started: Administrators/Getting_started.md
     - Users:
