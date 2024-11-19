@@ -1,5 +1,3 @@
 # About
 
-ExaMon is a project by [DEI - Department of Electrical, Electronic, and Information Engineering "Guglielmo Marconi"](https://dei.unibo.it/en/index.html) of the University of Bologna.
-
-[TBD]
+ExaMon is an open source framework developed by Francesco Beneventi at [DEI - Department of Electrical, Electronic, and Information Engineering "Guglielmo Marconi"](https://dei.unibo.it/en/index.html) of the University of Bologna under the supervision of Profs. Luca Benini, Andrea Bartolini and Andrea Borghesi and in collaboration with CINECA and E4.
