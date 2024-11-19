@@ -1,6 +1,7 @@
 site_name: ExaMon
-repo_url: https://github.com/EEESlab/examon
-repo_name: EEESlab/examon
+site_url: 'https://docs.examon.io/' 
+repo_url: https://github.com/ExamonHPC/examon
+repo_name: ExamonHPC/examon
 site_description: Gain deeper insights into your data with advanced monitoring, analytics and visualization tools.
 # copyright: Copyright &copy; 2023 Francesco Beneventi
 
@@ -63,4 +64,7 @@ nav:
     - Blog:
       - blog/index.md
 
-
+extra:
+  version:
+    provider: mike
+    alias: true
