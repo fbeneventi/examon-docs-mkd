@@ -29,5 +29,3 @@ jobs:
 
       - name: Build and deploy documentation using token
         run: mike deploy --push --update-aliases ${GIT_TAG} latest
-
-
