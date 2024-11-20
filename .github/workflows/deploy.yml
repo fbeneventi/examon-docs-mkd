@@ -28,4 +28,4 @@ jobs:
         run: echo "GIT_TAG=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
 
       - name: Build and deploy documentation using token
-        run: poetry run mike deploy --push --update-aliases ${GIT_TAG} latest
+        run: mike deploy --push --update-aliases ${GIT_TAG} latest
