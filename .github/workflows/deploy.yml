@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material mike
+          pip install mkdocs-material mike mkdocs-jupyter mkdocs-material-extensions
 
       - name: Set release version
         run: echo "GIT_TAG=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
