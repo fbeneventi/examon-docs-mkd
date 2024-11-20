@@ -30,5 +30,4 @@ If you're a user of ExaMon, our user documentation provides detailed information
 
 We hope this documentation helps you get the most out of ExaMon. If you have any questions or feedback, please don't hesitate to contact us at:
 
-- [ExaMon Forum](https://groups.google.com/g/examon)
-- [ExaMon User Support](mailto:francesco.beneventi@unibo.it)
+- [ExaMon Forum](https://github.com/orgs/ExamonHPC/discussions)
