@@ -38,7 +38,7 @@ jobs:
           git config --global user.email "docs@dummy.bot.com"
           
       - name: Set release version
-        run: echo "GIT_TAG=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
-
+        run: echo "Latest release version is ${{ steps.get_latest_release.outputs.release }}"
+        
       - name: Build and deploy documentation using token
-        run: mike deploy --push --update-aliases ${GIT_TAG} latest
+        run: mike deploy --push --update-aliases ${{ steps.get_latest_release.outputs.release }} latest
