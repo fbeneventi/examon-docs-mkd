@@ -30,6 +30,11 @@ jobs:
         run: |
           pip install mkdocs-material mike mkdocs-jupyter mkdocs-material-extensions
 
+      - name: Configure git for gh-pages
+        run: |
+          git config --global user.name "Examon Docs Bot"
+          git config --global user.email "docs@dummy.bot.com"
+          
       - name: Set release version
         run: echo "GIT_TAG=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
 
