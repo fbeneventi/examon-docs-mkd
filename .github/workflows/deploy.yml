@@ -38,7 +38,9 @@ jobs:
           git config --global user.email "docs@dummy.bot.com"
           
       - name: Set release version
-        run: echo "Latest release version is ${{ steps.get_latest_release.outputs.release }}"
+        run: echo "Latest release version is $(git describe --tags `git rev-list --tags --max-count=1`)"
         
       - name: Build and deploy documentation using token
-        run: mike deploy --push --update-aliases ${{ steps.get_latest_release.outputs.release }} latest
+        run: |
+          LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
+          mike deploy --push --update-aliases $LATEST_TAG latest
