@@ -20,6 +20,9 @@ theme:
     - search:
         lang: en
         prebuild_index: true
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - blog
